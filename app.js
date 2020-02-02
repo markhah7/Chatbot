@@ -3,7 +3,6 @@ const db = require("./db/db"); // Set up the express app
 const fs = require("fs");
 const bodyParser = require("body-parser");
 const app = express(); // get all todos
-
 app.use(bodyParser.json());
 
 app.get("/api/v1/todos", (req, res) => {
